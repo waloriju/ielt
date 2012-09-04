@@ -9,5 +9,5 @@ class Usuario
   field :nome, type: String
   field :email, type: String
   field :admin, type: Boolean
-  field :password_digest, type: String #for bcrypt-ruby
+  field :password_digest, type: String 
 end

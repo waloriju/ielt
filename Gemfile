@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 3.2.1'
 # gem 'therubyracer', :platforms => :ruby
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'ios-checkboxes'
 
 gem 'uglifier', '>= 1.0.3'
 
