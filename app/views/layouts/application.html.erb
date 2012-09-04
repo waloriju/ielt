@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ielt</title>
+  <title>IELT</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	
+<div class="container">
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="/">IELT</a>
+	    <ul class="nav">
+	      <li><a href="/">Principal</a></li>
+		  <li><a href="#">Noticias</a></li>
+	      <li><a href="#">Ministérios</a></li>
+		  <li><a href="#">Missionário</a></li>
+		  <li><a href="#">Educacional</a></li>
+		</ul>
+		<form class="navbar-form pull-right">
+		   <input type="text" class="span2 pull-right" placeholder="Pesquisar noticias">
+		 </form>
+	  </div>
+	</div>
+	
+	<%= yield %>
+</div>
 
 </body>
 </html>
