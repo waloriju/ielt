@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.0.3'
 gem 'jquery-rails'
 
 gem 'mongoid'
+gem 'mongoid_fulltext'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 
