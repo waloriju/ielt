@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 0b12f376d4e1718a047638491c941a40199e7005
+  revision: 73153c0a39e1d690541f0b22eaf8f934d462c02c
   specs:
     twitter-bootstrap-rails (2.1.3)
       actionpack (>= 3.1)
@@ -40,7 +40,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
-    builder (3.0.0)
+    builder (3.0.1)
     capistrano (2.13.3)
       highline
       net-scp (>= 1.0.0)
