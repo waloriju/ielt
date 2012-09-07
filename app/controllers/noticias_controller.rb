@@ -24,4 +24,18 @@ class NoticiasController < ApplicationController
   def show
     @noticia = Noticia.find params[:id]
   end
+  
+  def edit
+    @noticia = Noticia.find params[:id]
+  end
+  
+  def update
+     @noticia = Noticia.find params[:id]
+     
+    if @noticia.update_attributes(params[:noticia])
+       redirect_to @noticia, notice: 'Noticia atualizada'
+    else
+        render 'edit'
+    end
+  end
 end
