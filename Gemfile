@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 3.2.1'
 gem 'ios-checkboxes'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'ios-checkboxes'
+gem 'bootstrap-wysihtml5-rails'
 
 gem 'uglifier', '>= 1.0.3'
 
@@ -20,6 +21,9 @@ gem 'jquery-rails'
 gem 'mongoid'
 gem 'mongoid_fulltext'
 gem 'mongoid_slug', :github => 'digitalplaywright/mongoid-slug'
+gem 'mongoid_will_paginate'
+
+gem 'will_paginate'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 

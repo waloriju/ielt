@@ -1,9 +1,6 @@
 class UsuariosController < ApplicationController
     respond_to :json, :html
     before_filter :authenticate#, :only => [:new]
-    def index
-      
-    end
     
     def new
       @usuario = Usuario.new
@@ -19,6 +16,9 @@ class UsuariosController < ApplicationController
     end
     
     def index
+      if !user_signed_in?
+        return redirect_to root_path
+      end
       if !current_user.admin
         flash[:error] = 'Voce nao tem permissao para visualizar todos os usuarios'
         redirect_to painel_url

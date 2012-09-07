@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require ios-checkboxes
+*= require bootstrap-wysihtml5
  *= require_tree .
  */
 
@@ -19,6 +20,10 @@
 
 .well{
 	background-color: white !important;
+}
+
+.table{
+	background-color: white;
 }
 
 .form-actions {

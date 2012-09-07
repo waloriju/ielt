@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require ios-checkboxes
+//= require bootstrap-wysihtml5-all
 //= require_tree .
