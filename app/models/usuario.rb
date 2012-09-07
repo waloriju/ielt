@@ -10,4 +10,6 @@ class Usuario
   field :email, type: String
   field :admin, type: Boolean
   field :password_digest, type: String 
+  
+  has_many :noticias
 end

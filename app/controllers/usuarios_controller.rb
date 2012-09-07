@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
     respond_to :json, :html
+    before_filter :authenticate#, :only => [:new]
     def index
       
     end
@@ -15,5 +16,9 @@ class UsuariosController < ApplicationController
       else
         render 'new'
       end
+    end
+    
+    def index
+      redirect_to painel_url
     end
 end

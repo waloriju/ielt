@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   
   def new
     if user_signed_in?
-      redirect_to root_path, alert: "What are you trying to do?"
+      redirect_to root_path, alert: "Voce ja esta logado"
     end
   end
   
@@ -11,16 +11,15 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate(params[:password])
       session[:usuario_id] = user.id
-      redirect_to dashboard_url, :notice => "Welcome home"
+      redirect_to painel_path, :notice => "Bem vindo"
     else
-      flash.now.alert = "Invalid email or password"
-      notify_bugsnag(RuntimeError.new("Someone tried to login: "+params[:email]))
+      flash.now.alert = "Email ou senha invalidos"
       render "new"
     end
   end
 
   def destroy
-    session[:usuario] = nil
-    redirect_to root_url, :notice => "Logged out!"
+    session[:usuario_id] = nil
+    redirect_to root_url
   end
 end
