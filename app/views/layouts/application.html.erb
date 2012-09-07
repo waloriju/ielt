@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -14,7 +15,6 @@
 	  <div class="navbar-inner">
 	    <a class="brand" href="/">IELT</a>
 	    <ul class="nav">
-	      <li><a href="/">Principal</a></li>
 		  <li><a href="/noticias">Noticias</a></li>
 	      <li><a href="#">Ministérios</a></li>
 		  <li><a href="#">Missionário</a></li>
@@ -25,7 +25,7 @@
 			
 		<% if !user_signed_in? %>
 		<a class="pull-right" href="/login">
-			<i class="icon-key"> </i>
+			<i class="icon-key"> </i> Administração
 		</a>
 		<% end %>
 		</li>
@@ -34,7 +34,7 @@
 		<% if user_signed_in? %>
 		<ul class="nav pull-right">
 			<li>
-				<a href="/painel">Bem vindo, <%= current_user.nome %></a>
+				<a href="/painel"><i class="icon-dashboard"> </i> Painel de controle</a>
 			</li>
 		
 		</ul>
@@ -77,5 +77,13 @@
 	<%= yield %>
 </div>
 
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.check_admin').iphoneStyle({
+		  checkedLabel: 'Admin.',
+		  uncheckedLabel: 'Comum'
+		});
+  });
+</script>
 </body>
 </html>

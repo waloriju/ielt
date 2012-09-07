@@ -8,6 +8,8 @@ gem 'coffee-rails', '~> 3.2.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
 
+#Assets
+gem 'ios-checkboxes'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'ios-checkboxes'
 
@@ -17,6 +19,7 @@ gem 'jquery-rails'
 
 gem 'mongoid'
 gem 'mongoid_fulltext'
+gem 'mongoid_slug', :github => 'digitalplaywright/mongoid-slug'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 

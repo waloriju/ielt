@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   
   def new
     if user_signed_in?
-      redirect_to root_path, alert: "Voce ja esta logado"
+      redirect_to painel_path, alert: "Voce ja esta logado"
     end
   end
   

@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require ios-checkboxes
  *= require_tree .
  */
 
@@ -24,10 +25,25 @@
 	background-color: white !important;
 }
 
+.titulo {
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	padding-top: 10px;
+}
+
+.centralizado {
+	text-align: center;
+}
+
  /** Alerts **/
  
  .alerts {
   margin: 20px;
+}
+
+.alert-message h2{
+	font-size: 17px;
+	line-height: 20px;
 }
 
 .alerts p {

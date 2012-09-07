@@ -19,6 +19,14 @@
 	<%= f.label :email %>
 	<%= f.text_field :email  %>
 	
+	<% if current_user.admin %>
+ 		<fieldset>
+ 			<legend>Permissões</legend>
+ 			<%= f.check_box :admin, :class => "check_admin" %>
+ 		
+ 		</fieldset>
+	<% end %>
+	
 	<fieldset>
 		<legend>Senha</legend>
 		<%= f.label :password, 'Senha' %>

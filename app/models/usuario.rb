@@ -11,5 +11,9 @@ class Usuario
   field :admin, type: Boolean
   field :password_digest, type: String 
   
+  validates :nome, presence: true
+  validates :email, uniqueness: true
+  validates :password, presence: true, :on => :create
+  
   has_many :noticias
 end
