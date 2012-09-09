@@ -31,7 +31,7 @@
 }
 
 .titulo {
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster', cursive !important;
 	font-size: 60px;
 	padding-top: 10px;
 }
