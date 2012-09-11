@@ -11,8 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require ios-checkboxes
+//= require twitter/bootstrap
 //= require bootstrap-wysihtml5-all
 //= require_tree .

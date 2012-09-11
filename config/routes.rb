@@ -1,4 +1,6 @@
 Ielt::Application.routes.draw do
+  resources :ministerios
+
   get "session/create"
 
   get "session/destroy"

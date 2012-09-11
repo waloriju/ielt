@@ -1,0 +1,25 @@
+<%= form_for @ministerio, :html => {:class => 'well'} do |f| %>
+  <% if @ministerio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ministerio.errors.count, "error") %> prohibited this ministerio from being saved:</h2>
+
+      <ul>
+      <% @ministerio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+		<%= f.label :descricao, "Conteudo" %>
+		<%= f.text_area :descricao, :class => 'weditor', :style => 'width: 100%; height: 200px;' %>
+  </div>
+	<div class="form-actions">
+		<%= f.submit 'Salvar', :class => 'btn btn-large'%>
+	</div>
+<% end %>

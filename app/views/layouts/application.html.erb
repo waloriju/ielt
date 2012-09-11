@@ -17,7 +17,16 @@
 	    <ul class="nav">
 			<li><a href="#">Sobre a IEL</a></li>
 		  <li><a href="/noticias">Noticias</a></li>
-	    <li><a href="#">Ministérios</a></li>
+	    <li class="dropdown">
+				<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Ministérios <b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+				  <% for ministerio in Ministerio.all.cache do %>
+						<li>
+							<a tabindex="-1" href="<%= ministerio_path(ministerio)%>"><%= ministerio.titulo %></a>
+						</li>
+					<% end %>
+				</ul>
+			</li>
 		  <li><a href="#">Missionário</a></li>
 		  <li><a href="#">Educacional</a></li>
 			<li><a href="#">Agenda</a></li>
@@ -87,6 +96,10 @@
 		  uncheckedLabel: 'Comum'
 		});
   });
+</script>
+
+<script type="text/javascript">
+	$('.weditor').wysihtml5();
 </script>
 </body>
 </html>
