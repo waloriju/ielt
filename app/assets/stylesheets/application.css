@@ -18,6 +18,10 @@
 	font-family: 'Open Sans' serif;
 }
 
+hr {
+	border-top: 1px solid #C3C3C3 !important;
+}
+
 .well{
 	background-color: white !important;
 }
