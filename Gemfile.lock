@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/digitalplaywright/mongoid-slug.git
-  revision: 6c93390c392881e25c0c16c6a0b939127fe76d2e
+  revision: 95c36b648fdea5631f4192263a3f3510fa56f339
   specs:
-    mongoid_slug (0.20.0.rc1)
+    mongoid_slug (1.0.0.rc1)
       mongoid (~> 3.0)
       stringex (~> 1.4)
 

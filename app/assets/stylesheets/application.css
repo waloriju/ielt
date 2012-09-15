@@ -15,11 +15,22 @@
  */
 
 *{
-	font-family: 'Open Sans' serif;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
 }
 
 hr {
 	border-top: 1px solid #C3C3C3 !important;
+}
+
+.navbar-inner{
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.carousel-control{
+	font-size: 42px !important;
+	line-height: 40px !important;
 }
 
 .well{
