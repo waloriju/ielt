@@ -14,7 +14,7 @@
  *= require_tree .
  */
 
-*{
+* {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 }
@@ -23,7 +23,7 @@ hr {
 	border-top: 1px solid #C3C3C3 !important;
 }
 
-.navbar-inner{
+.navbar-inner {
 	font-size: 13px;
 	font-weight: 300;
 }
