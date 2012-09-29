@@ -33,6 +33,9 @@
 				<li class="nav-header">Educacional</li>
 				<li><a href="#">Adicionar uma pagina educacional</a></li>
 				<li><a href="#">Ver todos as paginas já cadastradas</a></li>
+				
+				<li class="nav-header">Paginas estaticas</li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:titulo => "Sobre").first) %>">Sobre a IELT</a></li>
 	 	 </ul>
 		</div>
 	</div>

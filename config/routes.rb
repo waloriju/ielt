@@ -15,7 +15,8 @@ Ielt::Application.routes.draw do
   get "signup" => "usuarios#new", :as => "signup"
   
   match "painel" => "painel#index"
+  match "sobre" => "home#sobre"
   
-  resources :sessions, :usuarios, :noticias
+  resources :sessions, :usuarios, :noticias, :paginas
 
 end
