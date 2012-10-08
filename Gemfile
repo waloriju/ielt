@@ -25,6 +25,8 @@ gem 'mongoid_will_paginate'
 
 gem 'will_paginate'
 
+gem 'rails-i18n'
+
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'unicorn'

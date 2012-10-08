@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/digitalplaywright/mongoid-slug.git
-  revision: 09cca521ff73bf5f4d12e2f1bce376fa24295f2d
+  revision: 095de064d1f07a4997d217a1c8f82add1c7e8114
   specs:
     mongoid_slug (1.0.0)
       mongoid (~> 3.0)
@@ -48,7 +48,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
-    bootstrap-wysihtml5-rails (0.3.1.1)
+    bootstrap-wysihtml5-rails (0.3.1.6)
       railties (>= 3.0)
     builder (3.0.3)
     capistrano (2.13.4)
@@ -130,6 +130,8 @@ GEM
       activesupport (= 3.2.8)
       bundler (~> 1.0)
       railties (= 3.2.8)
+    rails-i18n (0.6.6)
+      i18n (~> 0.5)
     railties (3.2.8)
       actionpack (= 3.2.8)
       activesupport (= 3.2.8)
@@ -184,6 +186,7 @@ DEPENDENCIES
   mongoid_slug!
   mongoid_will_paginate
   rails (= 3.2.8)
+  rails-i18n
   sass-rails (~> 3.2.3)
   twitter-bootstrap-rails!
   uglifier (>= 1.0.3)
