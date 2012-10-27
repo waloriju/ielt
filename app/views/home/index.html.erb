@@ -1,41 +1,21 @@
 <div class="row">
 	<div class="span12">
-		<h1 class="ielt">IELT</h1>
+		<h1 class="centralizado ielt">Igreja Evangélica Livre de Toledo</h1>
 	</div>
-</div>
-
-<div class="row">
-	<div class="span12">
-		<p class="subielt">Igreja Evangélica Livre de Toledo</p>
 	</div>
-</div>
 
 <div class="row">
 	<div class="span12">
 		<div class="well" style="margin-top: 15px;">
-			<div id="imagens" class="carousel slide" style="margin-top: 15px;">
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="http://www.placehold.it/2048x350" alt="">
-					</div>
-					<div class="item">
-						<img src="http://www.placehold.it/2048x350" alt="">
-					</div>
-					<div class="item">
-						<img src="http://www.placehold.it/2048x350" alt="">
-					</div>
-				</div>
-				<a class="left carousel-control" href="#imagens" data-slide="prev"><</a>
-				<a class="right carousel-control" href="#imagens" data-slide="next">></a>
-			</div>
+			<%= render "helper/imagens"%>
 		</div>
 	</div>
 </div>
 
 <div class="row">
-	<div class="span12">
+	<div class="span1 offset5">
 		<h1 class="subielt">
-			<i class="icon-star"> </i>
+			<img src="<%= asset_path 'logo-ielt2.png'%>" class="span1 centralizado"/>
 		</h1>
 	</div>
 </div>

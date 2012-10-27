@@ -30,12 +30,17 @@
 				<li><a href="/ministerios/new">Adicionar um ministérios</a></li>
 				<li><a href="/ministerios	">Ver todos os ministérios</a></li>
 				
+				<li class="nav-header">Missionario</li>
+				<li><a href="/missionarios/new">Adicionar uma pagina missionaria</a></li>
+				<li><a href="/missionarios">Ver todos as paginas</a></li>
+				
 				<li class="nav-header">Educacional</li>
 				<li><a href="#">Adicionar uma pagina educacional</a></li>
 				<li><a href="#">Ver todos as paginas já cadastradas</a></li>
 				
 				<li class="nav-header">Paginas estaticas</li>
-				<li><a href="<%= edit_pagina_path(Pagina.where(:titulo => "Sobre").first) %>">Sobre a IELT</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "sobre").first) %>">Sobre a IELT</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "visao").first) %>">Nossa visão</a></li>
 	 	 </ul>
 		</div>
 	</div>

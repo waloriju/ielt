@@ -1,9 +1,6 @@
 class MinisteriosController < ApplicationController
-  
   before_filter :authenticate, :except => [:index, :show]
   
-  # GET /ministerios
-  # GET /ministerios.json
   def index
     @ministerios = Ministerio.all
 
@@ -13,8 +10,6 @@ class MinisteriosController < ApplicationController
     end
   end
 
-  # GET /ministerios/1
-  # GET /ministerios/1.json
   def show
     @ministerio = Ministerio.find(params[:id])
 
@@ -24,8 +19,6 @@ class MinisteriosController < ApplicationController
     end
   end
 
-  # GET /ministerios/new
-  # GET /ministerios/new.json
   def new
     @ministerio = Ministerio.new
 
@@ -35,13 +28,10 @@ class MinisteriosController < ApplicationController
     end
   end
 
-  # GET /ministerios/1/edit
   def edit
     @ministerio = Ministerio.find(params[:id])
   end
 
-  # POST /ministerios
-  # POST /ministerios.json
   def create
     @ministerio = Ministerio.new(params[:ministerio])
 
@@ -56,8 +46,6 @@ class MinisteriosController < ApplicationController
     end
   end
 
-  # PUT /ministerios/1
-  # PUT /ministerios/1.json
   def update
     @ministerio = Ministerio.find(params[:id])
 
@@ -72,8 +60,6 @@ class MinisteriosController < ApplicationController
     end
   end
 
-  # DELETE /ministerios/1
-  # DELETE /ministerios/1.json
   def destroy
     @ministerio = Ministerio.find(params[:id])
     @ministerio.destroy

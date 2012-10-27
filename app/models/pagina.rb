@@ -3,6 +3,7 @@ class Pagina
   include Mongoid::Timestamps
   
   field :titulo, type: String
+  field :uniq, type: String
   field :conteudo, type: String
   
   validates :titulo, :conteudo, presence: true

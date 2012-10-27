@@ -1,5 +1,6 @@
 class PaginasController < ApplicationController
-
+  before_filter :authenticate, :except => [:index, :show]
+  
   def edit
     @pagina = Pagina.find(params[:id])
   end

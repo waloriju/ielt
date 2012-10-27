@@ -1,10 +1,10 @@
-<%= form_for @ministerio, :html => {:class => 'well'} do |f| %>
-	<% if @ministerio.errors.any? %>
+<%= form_for @missionario, :html => {:class => 'well'} do |f| %>
+	<% if @missionario.errors.any? %>
 	<div id="error_explanation">
-		<h2><%= pluralize(@ministerio.errors.count, "error") %> prohibited this ministerio from being saved:</h2>
+		<h2><%= pluralize(@missionario.errors.count, "error") %> prohibited this ministerio from being saved:</h2>
 
 		<ul>
-			<% @ministerio.errors.full_messages.each do |msg| %>
+			<% @missionario.errors.full_messages.each do |msg| %>
 			<li><%= msg %></li>
 			<% end %>
 		</ul>

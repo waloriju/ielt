@@ -1,0 +1,21 @@
+<h1 class="titulo centralizado" style="color: #3b5998;">
+	<%= @missionario.titulo %>
+</h1>
+
+<% if @missionario.descricao && !@missionario.descricao.eql?("") %>
+<div class="well" style="margin-top: 20px;">
+	<p>
+		<%= @missionario.descricao.html_safe %>
+	</p>
+</div>
+<% end %>
+
+<% if user_signed_in? %>
+<div class="row">
+	<div class="span12">
+		<a href="<%= edit_missionario_path(@missionario) %>"><i class="icon-pencil"> </i> Editar</a> ou 
+		<a href="<%= missionario_path(@missionario) %>" data-method="delete" data-confirm="Tem certeza?"><i class="icon-remove-circle"> </i> deletar</a>
+	</div>
+</div>
+<% end %>
+
