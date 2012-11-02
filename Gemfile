@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 3.2.1'
 
 #Assets
 gem 'ios-checkboxes'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails'#, :github => 'seyhunak/twitter-bootstrap-rails'
 gem 'ios-checkboxes'
 gem 'bootstrap-wysihtml5-rails'
 
