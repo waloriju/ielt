@@ -35,8 +35,8 @@
 				<li><a href="/missionarios">Ver todos as paginas</a></li>
 				
 				<li class="nav-header">Educacional</li>
-				<li><a href="#">Adicionar uma pagina educacional</a></li>
-				<li><a href="#">Ver todos as paginas já cadastradas</a></li>
+				<li><%= link_to "Adicionar uma pagina educacional", new_educacional_path %></li>
+				<li><%= link_to "Todas as paginas", educacionais_path %></li>
 				
 				<li class="nav-header">Paginas estaticas</li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "sobre").first) %>">Sobre a IELT</a></li>

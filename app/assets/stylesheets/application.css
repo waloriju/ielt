@@ -19,6 +19,13 @@
 	font-weight: 400;
 }
 
+.logo {
+	color: #3A5F86 !important;
+	text-shadow: 1px 0px 3px #eaeaea !important;
+	font-size: 30px !important;
+	font-family: 'Questrial' !important;
+}
+
 hr {
 	border-top: 1px solid #C3C3C3 !important;
 }

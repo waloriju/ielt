@@ -1,0 +1,27 @@
+<h1 class="titulo centralizado" style="color: #3b5998;">
+	<%= @educacional.titulo %>
+</h1>
+
+<% if @educacional.descricao && !@educacional.descricao.eql?("") %>
+<div class="well" style="margin-top: 20px;">
+	<p>
+		<%= @educacional.descricao.html_safe %>
+	</p>
+</div>
+<% end %>
+
+<% if user_signed_in? %>
+<div class="row">
+	<div class="span12">
+		<a href="<%= edit_educacional_path(@educacional) %>"><i class="icon-pencil"> </i> Editar</a> ou 
+		<a href="<%= educacional_path(@educacional) %>" data-method="delete" data-confirm="Tem certeza?"><i class="icon-remove-circle"> </i> deletar</a>
+	</div>
+</div>
+<% end %>
+
+<div class="row">
+	<div class="span12">
+		<%= render "helper/disqus"%>
+	</div>
+</div>
+

@@ -17,5 +17,5 @@ Ielt::Application.routes.draw do
   match "sobre" => "home#sobre"
   match "nossa-visao" => "home#visao"
   
-  resources :sessions, :usuarios, :noticias, :paginas, :ministerios, :missionarios
+  resources :sessions, :usuarios, :noticias, :paginas, :ministerios, :missionarios, :educacionais
 end

@@ -2,13 +2,12 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+#Assets
 gem 'sass-rails',   '~> 3.2.3'
 gem 'coffee-rails', '~> 3.2.1'
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'therubyracer', :platforms => :ruby
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', :platforms => :ruby
-
-#Assets
 gem 'ios-checkboxes'
 gem 'twitter-bootstrap-rails'#, :github => 'seyhunak/twitter-bootstrap-rails'
 gem 'ios-checkboxes'

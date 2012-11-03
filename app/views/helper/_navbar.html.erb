@@ -1,6 +1,6 @@
 <div class="navbar">
 	<div class="navbar-inner">
-		<a class="brand" href="/">IELT</a>
+		<a class="brand logo" href="/" rel="tooltip" data-placement="bottom" data-original-title="Igreja evangélica livre de Toledo">IELT</a>
 		<ul class="nav">
 			<li class="dropdown">
 				<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Sobre a IELT <b class="caret"></b></a>
@@ -30,7 +30,16 @@
 					<% end %>
 				</ul>
 			</li>
-			<li><a href="#">Educacional</a></li>
+			<li class="dropdown">
+				<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Educacional <b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+					<% for educacional in Educacional.all.cache do %>
+					<li>
+						<a tabindex="-1" href="<%= educacional_path(educacional)%>"><%= educacional.titulo %></a>
+					</li>
+					<% end %>
+				</ul>
+			</li>
 			<li><a href="#">Agenda</a></li>
 			<li><a href="#">Devocionais</a></li>
 		</ul>
