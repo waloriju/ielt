@@ -16,6 +16,7 @@ Ielt::Application.routes.draw do
   #Paginas estaticas
   match "sobre" => "home#sobre"
   match "nossa-visao" => "home#visao"
+  match "contato" => "home#contato"
   
   resources :sessions, :usuarios, :noticias, :paginas, :ministerios, :missionarios, :educacionais
 end

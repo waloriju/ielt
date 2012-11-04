@@ -1,26 +1,26 @@
-	<% unless flash[:notice].blank? %>
-	<div class="alert-message success fade in out">
-		<a class="close" data-dismiss="alert">x</a>
-		<div>
-			<h2><%= flash[:notice] %></h2>
-		</div>
+<% unless flash[:notice].blank? %>
+<div class="alert-message success fade in out">
+	<a class="close" data-dismiss="alert">x</a>
+	<div>
+		<h2><%= flash[:notice] %></h2>
 	</div>
-	<% end %>
+</div>
+<% end %>
 
-	<% unless flash[:error].blank? %>
-	<div class="alert-message error fade in out">
-		<a class="close" data-dismiss="alert">x</a>
-		<div>
-			<h2><%= flash[:error] %></h2>
-		</div>
+<% unless flash[:error].blank? %>
+<div class="alert-message error fade in out">
+	<a class="close" data-dismiss="alert">x</a>
+	<div>
+		<h2><%= flash[:error] %></h2>
 	</div>
-	<% end %>
+</div>
+<% end %>
 
-	<% unless flash[:alert].blank? %>
-	<div class="alert-message warning fade in out">
-		<a class="close" data-dismiss="alert">x</a>
-		<div>
-			<h2><%= flash[:alert] %></h2>
-		</div>
+<% unless flash[:alert].blank? %>
+<div class="alert-message warning fade in out">
+	<a class="close" data-dismiss="alert">x</a>
+	<div>
+		<h2><%= flash[:alert] %></h2>
 	</div>
-	<% end %>
+</div>
+<% end %>
