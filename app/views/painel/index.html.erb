@@ -13,10 +13,14 @@
 	</div>
 </div>
 
+<div class="span12">
+	<h1 class="titulo">Menu</h1>
+	<hr />
+
+</div>
+
 <div class="row">
 	<div class="span4">
-		<h1 class="titulo">Menu</h1>
-		<hr />
 		<div class="well">
 	 	 <ul class="nav nav-list">
 				<li class="nav-header">Usuários</li>
@@ -41,6 +45,11 @@
 				<li class="nav-header">Paginas estaticas</li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "sobre").first) %>">Sobre a IELT</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "visao").first) %>">Nossa visão</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "cremos").first) %>">O que cremos</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "estrutura").first) %>">Estrutura</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "historico").first) %>">Histórico</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "estatuto").first) %>">Estatuto</a></li>
+				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "regimento").first) %>">Regimento</a></li>
 	 	 </ul>
 		</div>
 	</div>
