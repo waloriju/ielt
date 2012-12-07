@@ -26,6 +26,8 @@ gem 'will_paginate'
 
 gem 'rails-i18n'
 
+gem "simple_calendar"
+
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'unicorn'

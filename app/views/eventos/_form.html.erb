@@ -1,0 +1,26 @@
+<%= form_for @evento, :html => {:class => 'well'} do |f| %>
+<% if @evento.errors.any? %>
+<div id="error_explanation" class="alert">
+	<h2><%= pluralize(@evento.errors.count, "error") %> prohibited this ministerio from being saved:</h2>
+
+	<ul>
+		<% @evento.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+	<%= f.label :data_evento, "Data do evento" %>
+	<input type="text" value="<%= @evento.data_evento %>" data-date-format="dd/mm/yyyy" id="datepicker" 
+		name="evento[data_evento]">
+		
+	<%= f.label :titulo, "Nome do evento"%>
+	<%= f.text_field :titulo, :style => 'width: 30%;' %>
+	
+	<%= f.label :descricao, "Descrição" %>
+	<%= f.text_area :descricao, :class => 'weditor', :style => 'width: 100%; height: 200px;' %>
+	
+	<div class="form-actions">
+		<%= f.submit 'Salvar', :class => 'btn btn-large'%>
+	</div>
+<% end %>

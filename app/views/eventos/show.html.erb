@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="span12">
+		<h1><%= @evento.titulo %></h1>
+		<h3>Data: <%= display_date @evento.data_evento %></h3>
+	</div>
+	
+	<div class="span12">
+		<div class="well">
+			<p><%= @evento.descricao.html_safe %></p>
+		</div>
+	</div>
+	
+	<div class="span12">
+		<%= render 'helper/disqus'%>
+	</div>
+</div>

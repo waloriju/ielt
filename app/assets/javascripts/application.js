@@ -16,4 +16,6 @@
 //= require twitter/bootstrap
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/pt-BR
+//= require bootstrap-datepicker
+//= require bootstrap-datepicker.pt-BR
 //= require_tree .

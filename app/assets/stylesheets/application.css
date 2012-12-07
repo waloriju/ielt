@@ -11,6 +11,7 @@
  *= require_self
  *= require ios-checkboxes
  *= require bootstrap-wysihtml5
+ *= require datepicker
  *= require_tree .
  */
 
