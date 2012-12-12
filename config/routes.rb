@@ -23,6 +23,6 @@ Ielt::Application.routes.draw do
   match "estatuto" => "home#estatuto"
   match "regimento" => "home#regimento"
 
-  resources :sessions, :usuarios, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos
+  resources :sessions, :usuarios, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners
     
 end

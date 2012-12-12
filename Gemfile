@@ -23,7 +23,9 @@ gem 'mongoid_slug', :github => 'digitalplaywright/mongoid-slug'
 gem 'mongoid_will_paginate'
 
 #Upload
+gem 'rmagick'
 gem 'carrierwave'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'fog'
 
 gem 'will_paginate'
@@ -38,3 +40,11 @@ gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
+
+
+#Dev
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end

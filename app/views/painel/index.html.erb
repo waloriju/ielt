@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="span12">
-		<h1 class="titulo">Menu</h1>
+		<h1 class="titulo centralizado">Menu</h1>
 		<hr />
 
 	</div>
@@ -29,11 +29,17 @@
 
 				<li class="nav-header">Noticias</li>
 				<li><%= link_to 'Adicionar uma noticia', new_noticia_path %></li>
-
+				
 				<li class="nav-header">Ministérios</li>
 				<li><a href="/ministerios/new">Adicionar um ministérios</a></li>
 				<li><a href="/ministerios	">Ver todos os ministérios</a></li>
+			</ul>
+		</div>
+	</div>
 
+	<div class="span4">
+		<div class="well">
+				<ul class="nav nav-list">
 				<li class="nav-header">Missionario</li>
 				<li><a href="/missionarios/new">Adicionar uma pagina missionaria</a></li>
 				<li><a href="/missionarios">Ver todos as paginas</a></li>
@@ -41,7 +47,16 @@
 				<li class="nav-header">Educacional</li>
 				<li><%= link_to "Adicionar uma pagina educacional", new_educacional_path %></li>
 				<li><%= link_to "Todas as paginas", educacionais_path %></li>
+				
+				<li class="nav-header">Agenda</li>
+				<li><%= link_to "Adicionar um evento", new_evento_path %></li>
+			</ul>
+		</div>
+	</div>
 
+	<div class="span4">
+		<div class="well">
+			<ul class="nav nav-list">
 				<li class="nav-header">Paginas estaticas</li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "sobre").first) %>">Sobre a IELT</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "visao").first) %>">Nossa visão</a></li>
@@ -50,6 +65,10 @@
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "historico").first) %>">Histórico</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "estatuto").first) %>">Estatuto</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "regimento").first) %>">Regimento</a></li>
+				
+				<li class="nav-header">Banners</li>
+				<li><a href="<%= new_banner_path %>">Adicionar um banner</a></li>
+				
 			</ul>
 		</div>
 	</div>
