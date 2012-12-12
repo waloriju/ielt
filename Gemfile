@@ -22,6 +22,10 @@ gem 'mongoid_fulltext'
 gem 'mongoid_slug', :github => 'digitalplaywright/mongoid-slug'
 gem 'mongoid_will_paginate'
 
+#Upload
+gem 'carrierwave'
+gem 'fog'
+
 gem 'will_paginate'
 
 gem 'rails-i18n'

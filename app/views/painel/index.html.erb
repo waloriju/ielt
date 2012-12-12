@@ -2,46 +2,46 @@
 	<div class="span12">
 		<h2>Bem vindo de volta, <i><%= current_user.nome %></i></h2>
 		<% if current_user.admin %>
-			<h4>
-				<small><i class="icon-legal"> </i>Você é o administrador</small>
-			</h4>
+		<h4>
+			<small><i class="icon-legal"> </i>Você é o administrador</small>
+		</h4>
 		<% end %>
 	</div>
-	
+
 	<div class="span12">
 		<a href="logout" data-confirm="Tem certeza?"><i class="icon-remove-circle"> </i> Sair </a>
 	</div>
-</div>
 
-<div class="span12">
-	<h1 class="titulo">Menu</h1>
-	<hr />
+	<div class="span12">
+		<h1 class="titulo">Menu</h1>
+		<hr />
 
+	</div>
 </div>
 
 <div class="row">
 	<div class="span4">
 		<div class="well">
-	 	 <ul class="nav nav-list">
+			<ul class="nav nav-list">
 				<li class="nav-header">Usuários</li>
-	 	   	<li><%= link_to 'Criar um usuário', new_usuario_path %></li>
+				<li><%= link_to 'Criar um usuário', new_usuario_path %></li>
 				<li><%= link_to 'Ver todos os usuários', usuarios_path %></li>
-				
+
 				<li class="nav-header">Noticias</li>
 				<li><%= link_to 'Adicionar uma noticia', new_noticia_path %></li>
-				
+
 				<li class="nav-header">Ministérios</li>
 				<li><a href="/ministerios/new">Adicionar um ministérios</a></li>
 				<li><a href="/ministerios	">Ver todos os ministérios</a></li>
-				
+
 				<li class="nav-header">Missionario</li>
 				<li><a href="/missionarios/new">Adicionar uma pagina missionaria</a></li>
 				<li><a href="/missionarios">Ver todos as paginas</a></li>
-				
+
 				<li class="nav-header">Educacional</li>
 				<li><%= link_to "Adicionar uma pagina educacional", new_educacional_path %></li>
 				<li><%= link_to "Todas as paginas", educacionais_path %></li>
-				
+
 				<li class="nav-header">Paginas estaticas</li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "sobre").first) %>">Sobre a IELT</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "visao").first) %>">Nossa visão</a></li>
@@ -50,7 +50,7 @@
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "historico").first) %>">Histórico</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "estatuto").first) %>">Estatuto</a></li>
 				<li><a href="<%= edit_pagina_path(Pagina.where(:uniq => "regimento").first) %>">Regimento</a></li>
-	 	 </ul>
+			</ul>
 		</div>
 	</div>
 </div>
