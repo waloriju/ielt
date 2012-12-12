@@ -11,7 +11,7 @@
 </div>
 <% end %>
 	<%= f.label :data_evento, "Data do evento" %>
-	<input type="text" value="<%= @evento.data_evento %>" data-date-format="dd/mm/yyyy" id="datepicker" 
+	<input type="text" value="<%= @evento.data_evento.strftime("%d/%m/%Y") %>" data-date-format="dd/mm/yyyy" id="datepicker" 
 		name="evento[data_evento]">
 		
 	<%= f.label :titulo, "Nome do evento"%>

@@ -3,13 +3,22 @@
 		<h1><%= @evento.titulo %></h1>
 		<h3>Data: <%= display_date @evento.data_evento %></h3>
 	</div>
-	
+
 	<div class="span12">
 		<div class="well">
 			<p><%= @evento.descricao.html_safe %></p>
 		</div>
 	</div>
-	
+
+
+	<% if user_signed_in? %>
+	<div class="span12">
+			<a href="<%= edit_evento_path(@evento) %>"><i class="icon-pencil"> </i> Editar</a> ou 
+			<a href="<%= evento_path(@evento) %>" data-method="delete" data-confirm="Tem certeza?"><i class="icon-remove-circle"> </i> deletar</a>
+		<hr />
+	</div>
+	<% end %>
+
 	<div class="span12">
 		<%= render 'helper/disqus'%>
 	</div>

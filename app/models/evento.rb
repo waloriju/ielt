@@ -8,7 +8,7 @@ class Evento
     data_evento
   end
     
-  field :data_evento, type: Date
+  field :data_evento, type: Date, default: Time.now
   
   field :titulo, type: String
   field :descricao, type: String
