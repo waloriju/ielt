@@ -22,7 +22,11 @@ Ielt::Application.routes.draw do
   match "historico" => "home#historico"
   match "estatuto" => "home#estatuto"
   match "regimento" => "home#regimento"
+  
+  resources :usuarios do
+    get 'super', :on => :member
+  end
 
-  resources :sessions, :usuarios, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners
+  resources :sessions, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners
     
 end

@@ -10,19 +10,21 @@
 				</tr>
 
 				<% for usuario in @usuarios do %>
-					<tr>
-						<td><%= usuario.nome %></td>
-						<td><%= usuario.email %></td>
-						<td>
-							<div class="btn-group">
-							  <button class="btn">Deletar</button>
-							  <button class="btn">Fazer admin</button>
-							  <button class="btn">Visualizar</button>
-							</div>							
-						</td>
-					</tr>
+				<tr>
+					<td><%= usuario.nome %></td>
+					<td><%= usuario.email %></td>
+					<td>
+						<div class="btn-group">
+							<a class="btn" href="<%= usuario_path(usuario) %>" data-method="delete" data-confirm="Tem certeza?">Deletar</a>
+							<a class="btn" <% if usuario.admin %> disabled <% end %> href="<%= super_usuario_path(usuario) %>">
+								Tornar admin
+							</a>
+							<a class="btn" href="<%= usuario_path(usuario) %>">Visualizar</a>
+						</div>							
+					</td>
+				</tr>
 				<% end %>
-	
+
 			</tbody>
 		</table>
 	</div>
