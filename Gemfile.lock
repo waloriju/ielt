@@ -42,7 +42,7 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.7.0)
     binding_of_caller (0.6.8)
-    bootstrap-wysihtml5-rails (0.3.1.13)
+    bootstrap-wysihtml5-rails (0.3.1.14)
       railties (>= 3.0)
     builder (3.0.4)
     capistrano (2.13.5)
