@@ -5,4 +5,14 @@ class BannersController < ApplicationController
   def new
     @banner = Banner.new
   end
+  
+  def create
+    @banner = Banner.new params[:banner]
+    
+    if @banner.save
+      respond_with @banner
+    else
+      render 'new'
+    end
+  end
 end

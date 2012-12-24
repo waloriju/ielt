@@ -1,14 +1,13 @@
 <div id="imagens" class="carousel slide" style="margin-top: 15px;">
 	<div class="carousel-inner">
-		<div class="item active">
-			<img src="<%= asset_path "cafe.png" %>" alt="">
-		</div>
-		<div class="item">
-			<img src="http://www.placehold.it/2048x350" alt="">
-		</div>
-		<div class="item">
-			<img src="http://www.placehold.it/2048x350" alt="">
-		</div>
+		
+		<% Banner.order_by("created_at desc").limit(3).each_with_index do |banner, index| %>
+			<div class="item <% if index == 0 %> active <% end %>" style="width: 2048px; height: 250px">
+				<img src="<%= banner.img_url(:front_page) %>" alt="">
+			</div>
+		<% end %>
+		
+
 	</div>
 	<a class="left carousel-control" href="#imagens" data-slide="prev"><</a>
 	<a class="right carousel-control" href="#imagens" data-slide="next">></a>

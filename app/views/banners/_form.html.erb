@@ -1,0 +1,26 @@
+<%= form_for @banner, :html => {:class => 'well'} do |f| %>
+<% if @banner.errors.any? %>
+<div id="error_explanation" class="alert">
+	<h2><%= pluralize(@banner.errors.count, "erro") %> impede a continudade</h2>
+
+	<ul>
+		<% @banner.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+	<div class="field">
+		<%= f.label :titulo %>
+		<%= f.text_field :titulo %>
+	</div>
+	
+	<div class="field">
+		<%= f.label :img %>
+		<%= f.file_field :img %>
+	</div>
+	
+	<div class="form-actions">
+		<%= f.submit "Salvar", :class => "btn btn-large" %>
+	</div>
+<% end %>
