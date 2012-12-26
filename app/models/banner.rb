@@ -5,6 +5,7 @@ class Banner
   mount_uploader :img, BannerUploader
   
   field :titulo, type: String
+  field :mensagem, type: String
   
   validates :titulo, presence: true
 end

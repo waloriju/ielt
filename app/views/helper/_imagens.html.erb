@@ -1,12 +1,18 @@
 <div id="imagens" class="carousel slide" style="margin-top: 15px;">
 	<div class="carousel-inner">
-		
+
 		<% Banner.order_by("created_at desc").limit(3).each_with_index do |banner, index| %>
-			<div class="item <% if index == 0 %> active <% end %>" style="width: 2048px; height: 250px">
-				<img src="<%= banner.img_url(:front_page) %>" alt="">
+		<div class="item <% if index == 0 %> active <% end %>" style="height: 250px">
+			<img src="<%= banner.img_url(:front_page) %>" alt="<%= banner.titulo %>">
+			
+			<div class="carousel-caption" style="height: 60px">
+				<h4><%= banner.titulo %></h4>
+				<p><%= banner.mensagem %></p>
 			</div>
+		</div>
+
 		<% end %>
-		
+
 
 	</div>
 	<a class="left carousel-control" href="#imagens" data-slide="prev"><</a>

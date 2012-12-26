@@ -11,6 +11,7 @@
 /db/*.sqlite3
 
 /public/assets
+/public/upload*
 
 # Ignore environment configs
 environment.rb
