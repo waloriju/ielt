@@ -3,7 +3,7 @@ class NoticiasController < ApplicationController
   respond_to :json, :html
   def index
     #@noticias = Noticia.order_by('created_at desc').all
-    @noticias = Noticia.order_by(['created_at', 'desc']).paginate(:per_page=>5, :page=>params[:page])
+    @noticias = Noticia.order_by(['created_at', 'desc']).paginate(:per_page => 5, :page => params[:page])
   end
   
   def create

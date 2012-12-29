@@ -20,14 +20,18 @@ gem 'mongoid_fulltext'
 gem 'mongoid_slug', :github => 'digitalplaywright/mongoid-slug'
 gem 'mongoid_will_paginate'
 
-#Upload
+# Upload
 gem "mini_magick", :require => 'carrierwave/processing/mini_magick'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'fog'
 
+# Paginacao
 gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'will-paginate-i18n'
 
+# Traducao 
 gem 'rails-i18n'
 
 gem "simple_calendar"
