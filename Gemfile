@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.10'
 
 # Assets
 gem 'sass-rails',   '~> 3.2.3'
@@ -11,7 +11,7 @@ gem 'ios-checkboxes'
 gem 'twitter-bootstrap-rails'#, :github => 'seyhunak/twitter-bootstrap-rails'
 gem 'ios-checkboxes'
 gem 'bootstrap-wysihtml5-rails'
-gem 'uglifier', '>= 1.0.3'
+gem 'uglifier'
 gem 'jquery-rails'
 
 # Mongoid
