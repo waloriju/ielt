@@ -1,5 +1,7 @@
 #= require jquery
 #= require jquery_ujs
+#= require turbolinks
+#= require jquery.turbolinks
 #= require bootstrap
 #= require ios-checkboxes
 #= require bootstrap-wysihtml5

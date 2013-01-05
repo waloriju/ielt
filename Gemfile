@@ -14,6 +14,8 @@ group :assets do
   gem 'rails-font-awesome'
   gem 'ios-checkboxes'
   gem 'bootstrap-wysihtml5-rails'
+  gem 'turbolinks'
+  gem 'jquery-turbolinks'
 end
 
 # Dev
@@ -42,10 +44,9 @@ gem 'will-paginate-i18n'
 # Traducao 
 gem 'rails-i18n'
 
+# Outros
 gem "simple_calendar"
-
 gem 'bcrypt-ruby', '~> 3.0.0'
-
 gem 'unicorn'
 
 # Deploy with Capistrano
