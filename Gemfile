@@ -3,16 +3,24 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.10'
 
 # Assets
-gem 'sass-rails',   '~> 3.2.3'
-gem 'coffee-rails', '~> 3.2.1'
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'therubyracer', :platforms => :ruby
-gem 'ios-checkboxes'
-gem 'twitter-bootstrap-rails'#, :github => 'seyhunak/twitter-bootstrap-rails'
-gem 'ios-checkboxes'
-gem 'bootstrap-wysihtml5-rails'
-gem 'uglifier'
-gem 'jquery-rails'
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier'
+  gem 'jquery-rails'
+  gem 'therubyracer', :platforms => :ruby
+  gem 'ios-checkboxes'
+  gem 'bootstrap-sass'
+  gem 'rails-font-awesome'
+  gem 'ios-checkboxes'
+  gem 'bootstrap-wysihtml5-rails'
+end
+
+# Dev
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
 
 # Mongoid
 gem 'mongoid'
@@ -43,8 +51,3 @@ gem 'unicorn'
 # Deploy with Capistrano
 gem 'capistrano'
 
-#Dev
-group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-end

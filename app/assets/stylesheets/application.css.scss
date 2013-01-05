@@ -15,6 +15,20 @@
  *= require_tree .
  */
 
+$heroUnitBackground: white;
+$navbarBackground: #5d87b2;
+$navbarBackgroundHighlight: #7eacdc;
+$navbarLinkColor: white;
+$navbarLinkColorActive: white;
+
+@import "bootstrap";
+@import "font-awesome";
+body {
+	padding-top: 20px;
+	background: url("/assets/noisy.png");
+}
+@import "bootstrap-responsive";
+
 * {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
