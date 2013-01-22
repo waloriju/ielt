@@ -22,12 +22,13 @@ $navbarLinkColor: white;
 $navbarLinkColorActive: white;
 
 @import "bootstrap";
-@import "font-awesome";
 body {
 	padding-top: 20px;
 	background: url("/assets/noisy.png");
 }
 @import "bootstrap-responsive";
+@import 'elusive-webfont';
+
 
 * {
 	font-family: 'Quicksand', sans-serif;

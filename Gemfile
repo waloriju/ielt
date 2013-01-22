@@ -7,15 +7,16 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier'
-  gem 'jquery-rails'
+  gem 'jquery-rails', '2.1.4'
   gem 'therubyracer', :platforms => :ruby
   gem 'ios-checkboxes'
   gem 'bootstrap-sass'
-  gem 'rails-font-awesome'
+  gem 'elusive-icons-sass-rails'
   gem 'ios-checkboxes'
   gem 'bootstrap-wysihtml5-rails'
   gem 'turbolinks'
   gem 'jquery-turbolinks'
+  gem 'turbolinks_transitions'
 end
 
 # Dev

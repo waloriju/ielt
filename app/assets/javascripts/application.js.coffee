@@ -8,4 +8,5 @@
 #= require bootstrap-wysihtml5/locales/pt-BR
 #= require bootstrap-datepicker
 #= require bootstrap-datepicker.pt-BR
+#= require turbolinks_transitions
 #= require_tree .
