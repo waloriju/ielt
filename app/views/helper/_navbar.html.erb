@@ -67,9 +67,9 @@
 				</ul>
 				<% end %>
 
-				<form class="navbar-search pull-right">
-					<input type="text" class="span2 search-query" placeholder="Pesquisar">
-				</form>
+				<%= form_for Search.new, :html => { :class => "navbar-search pull-right"} do |f| %>
+					<input type="text" class="span2 search-query" placeholder="Pesquisar notícias" name="search[keywords]">
+				<% end %>
 			</div>
 		</div>
 	</div>

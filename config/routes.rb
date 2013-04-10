@@ -28,5 +28,6 @@ Ielt::Application.routes.draw do
   end
 
   resources :sessions, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners
+  resources :searches, :path => "buscar"
     
 end
