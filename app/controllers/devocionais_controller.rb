@@ -23,4 +23,13 @@ class DevocionaisController < ApplicationController
   def edit
     @devocional = Devocional.find params[:id]
   end
+  
+  def update
+    @devocional = Devocional.find params[:id]
+    if @devocional.update_attributes params[:devocional]
+      respond_with @devocional
+    else
+      render 'edit'
+    end
+  end
 end
