@@ -1,5 +1,15 @@
-<div class"row">
+<div class="row">
 	<div class="span12">
-		<h1>Resultados para <%= @search.keywords %>: <%= @search.noticias.size %></h1>
+		<h1><i class="icon-bookmark-empty"> </i>Notícias com <span class="highlight"><%= @search.keywords %></span>: <%= @search.noticias.size %></h1>
 	</div>
+</div>
+
+<div class="row well">
+	<% for result in @search.noticias %>
+		<% noticia = result.at(0) %>
+		<% score = result.at(1)%>
+	<div class="span12">
+		<h4><i class="icon-quotes"> </i><%= link_to noticia.titulo, noticia_path(noticia) %> <small>postada em <%= display_date(noticia.created_at)%></small></h4>
+	</div>
+	<% end %>
 </div>

@@ -10,7 +10,7 @@ class Search
   
   private 
   def find_news
-    noticia = Noticia.fulltext_search(keywords)
+    noticia = Noticia.fulltext_search(keywords, { :return_scores => true })
     noticia
   end
 end
