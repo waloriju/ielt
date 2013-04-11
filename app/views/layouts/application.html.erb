@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>IELT :: Igreja evangélica livre de Toledo</title>
+	<title>IELT :: <%= content_for?(:title) ? yield(:title) : "Igreja evangélica livre de Toledo" %></title>
 
 	<%= stylesheet_link_tag "application", :media => "all" %>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

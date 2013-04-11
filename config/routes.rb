@@ -27,7 +27,7 @@ Ielt::Application.routes.draw do
     get 'super', :on => :member
   end
 
-  resources :sessions, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners
+  resources :sessions, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners, :devocionais
   resources :searches, :path => "buscar"
     
 end

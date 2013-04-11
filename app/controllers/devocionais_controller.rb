@@ -1,0 +1,2 @@
+class DevocionaisController < ApplicationController
+end
