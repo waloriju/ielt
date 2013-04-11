@@ -1,0 +1,27 @@
+<%= form_for @devocional, :html => {:class => "well"} do |f| %>
+	<% if @devocional.errors.any? %>
+	<div id="error_explanation" class="alert">
+		<h2><%= pluralize(@devocional.errors.count, "erro") %> impedem a continudade</h2>
+
+		<ul>
+			<% @devocional.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+	
+	<%= f.label :data_devocional, "Data do devocional" %>
+	<input type="text" value="<%= @devocional.data_devocional.strftime("%d/%m/%Y") %>" data-date-format="dd/mm/yyyy" id="datepicker" 
+		name="devocional[data_devocional]">
+		
+	<%= f.label :titulo, "Titulo do devocional" %>
+	<%= f.text_field :titulo, :style => 'width: 30%;'%>
+	
+	<%= f.label :conteudo, "Devocional" %>
+	<%= f.text_area :conteudo, :class => 'weditor', :style => 'width: 99%; height: 200px;' %>
+		
+		<div class="form-actions">
+			<%= f.submit "Salvar", :class => "btn btn-large" %>
+		</div>
+<% end %>

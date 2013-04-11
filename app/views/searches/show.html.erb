@@ -11,7 +11,7 @@
 		<% noticia = result.at(0) %>
 		<% score = result.at(1)%>
 	<div class="span12">
-		<h4><i class="icon-quotes"> </i><%= link_to noticia.titulo, noticia_path(noticia) %> <small>postada em <%= display_date(noticia.created_at)%></small></h4>
+		<h4><i class="icon-quotes"> </i><%= link_to slice_string(noticia.titulo, 80), noticia_path(noticia) %> <small>postada em <%= display_date(noticia.created_at)%></small></h4>
 	</div>
 	<% end %>
 </div>
@@ -23,5 +23,13 @@
 	</div>
 </div>
 <% if !@search.devocionais.empty? %>
-	
+	<div class="row well">
+		<% for result in @search.devocionais %>
+			<% devocional = result.at(0) %>
+			<% score = result.at(1)%>
+		<div class="span12">
+			<h4><i class="icon-quotes"> </i><%= link_to slice_string(devocional.titulo, 80), devocional_path(devocional) %> <small>devocional para <%= display_date(devocional.created_at)%></small></h4>
+		</div>
+		<% end %>
+	</div>
 <% end%>

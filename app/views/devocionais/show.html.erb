@@ -1,0 +1,26 @@
+<% content_for :title, @devocional.titulo %>
+
+<div class="row">
+	<div class="span12">
+		<h1><%= @devocional.titulo %></h1>
+		<small>devocional para <%= display_date @devocional.data_devocional%></small><br/>
+		<small style="vertical-align: bottom;">postado por <%= @devocional.usuario.nome %></small> <img src="<%= gravatar @devocional.usuario.email%>" class="img-rounded" />
+	</div>
+	
+	<br />
+	
+	<div class="span12" style="padding-top: 10px">
+		<div class="well">
+			<p class="justificado">
+				<%= @devocional.conteudo.html_safe %>
+			</p>
+		</div>
+	</div>
+
+<% if user_signed_in? %>
+	<div class="span12">
+			<a href="<%= edit_devocional_path(@devocional) %>"><i class="icon-pencil"> </i> Editar</a> ou 
+			<a href="<%= devocional_path(@devocional) %>" data-method="delete" data-confirm="Tem certeza?"><i class="icon-remove-circle"> </i> deletar</a>
+	</div>
+<% end %>
+</div>
