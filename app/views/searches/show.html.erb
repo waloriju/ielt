@@ -22,6 +22,7 @@
 		<h1 class="text-center"><i class="icon-smiley-alt"> </i>Devocionais com <span class="highlight"><%= @search.keywords %></span>: <%= @search.devocionais.size %></h1>
 	</div>
 </div>
+
 <% if !@search.devocionais.empty? %>
 	<div class="row well">
 		<% for result in @search.devocionais %>
@@ -33,3 +34,10 @@
 		<% end %>
 	</div>
 <% end%>
+
+<div class="row">
+		<div class="input-prepend">
+		  <span class="add-on">Link direto</span>
+		  <input class="span4" id="prependedInput" type="text" value="<%= request.url %>" disabled>
+		</div>
+</div>

@@ -2,6 +2,10 @@ class DevocionaisController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
   respond_to :json, :html
   
+  def index
+    @devocionais = Devocional.all
+  end
+  
   def new
     @devocional = Devocional.new
   end
