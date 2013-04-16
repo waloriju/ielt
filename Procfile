@@ -1,1 +1,1 @@
-web: bundle exec unicorn -c config/unicorn/production.rb -E production
+web: bundle exec puma -b unix:///home/ielt/shared/socket -e production

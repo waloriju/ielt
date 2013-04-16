@@ -17,9 +17,10 @@ group :assets do
   gem 'turbolinks'
   gem 'jquery-turbolinks'
   gem 'turbolinks_transitions'
+  gem "slide-down-alerts-rails"#, "~> 0.0.2"
 end
 
-# Dev
+# Development
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
@@ -48,8 +49,14 @@ gem 'rails-i18n'
 # Outros
 gem "simple_calendar"
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
+gem 'rvm-capistrano'
+
+gem 'foreman'
+
+# Server
+gem 'puma'
+gem 'unicorn'
 

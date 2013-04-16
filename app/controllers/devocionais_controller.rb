@@ -31,6 +31,7 @@ class DevocionaisController < ApplicationController
   def update
     @devocional = Devocional.find params[:id]
     if @devocional.update_attributes params[:devocional]
+      flash[:notice] = "Devocional atualizado"
       respond_with @devocional
     else
       render 'edit'
