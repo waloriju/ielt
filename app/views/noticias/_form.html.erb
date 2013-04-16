@@ -1,4 +1,16 @@
 <%= form_for @noticia, :html => {:class => 'well'} do |f| %>
+
+<% if @noticia.errors.any? %>
+	<div id="error_explanation" class="alert">
+	<h2><%= pluralize(@noticia.errors.count, "erro") %> impede(m) a continuação</h2>
+
+	<ul>
+		<% @noticia.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+		<% end %>
+	</ul>
+	</div>
+<% end %>
 	<%= f.label :titulo %>
 	<%= f.text_field :titulo, :class => 'span4' %>
 	

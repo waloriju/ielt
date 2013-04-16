@@ -1,7 +1,7 @@
 <%= form_for @evento, :html => {:class => 'well'} do |f| %>
 <% if @evento.errors.any? %>
 <div id="error_explanation" class="alert">
-	<h2><%= pluralize(@evento.errors.count, "erro") %> impedem a continudade</h2>
+	<h2><%= pluralize(@evento.errors.count, "erro") %> impede(m) a continudade</h2>
 
 	<ul>
 		<% @evento.errors.full_messages.each do |msg| %>

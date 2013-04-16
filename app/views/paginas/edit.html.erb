@@ -1,5 +1,16 @@
 <h1>Editando "<%= @pagina.titulo %>"</h1>
 <%= form_for @pagina, :html => {:class => "well"} do |f| %>
+<% if @pagina.errors.any? %>
+	<div id="error_explanation" class="alert">
+	<h2><%= pluralize(@pagina.errors.count, "erro") %> impede(m) a continuação</h2>
+
+	<ul>
+		<% @pagina.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+		<% end %>
+	</ul>
+	</div>
+<% end %>
 	
 	<%= f.label :conteudo, "Conteudo" %>
 	<%= f.text_area :conteudo, :class => 'weditor', :style => 'width: 100%; height: 200px;' %>
