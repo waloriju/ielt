@@ -18,7 +18,7 @@ class BannersController < ApplicationController
     @banner = Banner.new params[:banner]
 
     if @banner.save
-      respond_with @banner
+      redirect_to root_path, notice: "Banner salvo"
     else
       render 'new'
     end
