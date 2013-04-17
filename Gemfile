@@ -55,7 +55,11 @@ gem 'capistrano'
 gem 'rvm-capistrano'
 gem 'capistrano-puma', require: false
 
+# Autostart
 gem 'foreman'
+
+# Monitoring
+gem 'newrelic_rpm'
 
 # Server
 gem 'puma'
