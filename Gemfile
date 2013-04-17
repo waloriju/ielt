@@ -62,6 +62,6 @@ gem 'foreman'
 gem 'newrelic_rpm'
 
 # Server
-gem 'puma'
+gem 'puma', :git => 'git://github.com/puma/puma.git'
 gem 'unicorn'
 
