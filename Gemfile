@@ -43,6 +43,12 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'will-paginate-i18n'
 
+# Background
+gem 'slim'
+gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sidekiq'
+gem 'kiqstand'
+
 # Traducao 
 gem 'rails-i18n'
 

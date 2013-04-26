@@ -1,5 +1,7 @@
 Ielt::Application.routes.draw do
-
+  require 'sidekiq/web'
+  
+  
   get "session/create"
   get "session/destroy"
   get "home/index"
@@ -10,7 +12,11 @@ Ielt::Application.routes.draw do
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "usuarios#new", :as => "signup"
-
+  
+  # Resetar a senha
+  get 'sessions/reset' => "sessions#reset"
+  match 'reset' => 'sessions#reset_password', :via => :post
+  
   match "painel" => "painel#index"
 
   #Paginas estaticas
@@ -29,5 +35,6 @@ Ielt::Application.routes.draw do
 
   resources :sessions, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners, :devocionais
   resources :searches, :path => "buscar"
-    
+  
+  mount Sidekiq::Web => '/sidekiq'
 end

@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="span12">
+		<h1>Resetar a senha</h1>
+	</div>
+	
+	<div class="span12">
+		<%= form_tag reset_path, :class => 'well' do %>
+		  <div class="field">
+		    <%= label_tag :email %>
+		    <%= text_field_tag :email, params[:email] %>
+		  </div>
+		  <div class="form-actions">
+		    <%= submit_tag "Resetar", :class => 'btn btn-large btn-success' %>
+		  </div>
+		<% end %>
+	</div>
+</div>
