@@ -22,3 +22,4 @@ deploy.rb
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+Gemfile.lock
