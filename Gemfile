@@ -10,7 +10,7 @@ group :assets do
   gem 'jquery-rails', '2.1.4'
   gem 'therubyracer', :platforms => :ruby
   gem 'ios-checkboxes'
-  gem 'bootstrap-sass'
+  gem 'bootstrap-sass', '2.3.1.0'
   gem 'elusive-icons-sass-rails'
   gem 'ios-checkboxes'
   gem 'bootstrap-wysihtml5-rails'
