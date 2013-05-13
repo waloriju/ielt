@@ -1,0 +1,5 @@
+---
+:verbose: false
+:pidfile: /home/ielt/shared/pids/sidekiq.pid
+:logfile: log/sidekiq.log
+:concurrency:  1
