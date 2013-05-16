@@ -23,3 +23,5 @@ deploy.rb
 /log/*.log
 /tmp
 #Gemfile.lock
+
+backup.txt

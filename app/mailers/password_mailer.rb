@@ -1,5 +1,5 @@
 class PasswordMailer < ActionMailer::Base
-  default from: "luizeduardokowalski@gmail.com"
+  default from: "bot@ieltoledo.org"
   
   def send_new_password(user, password)
     @user = user
