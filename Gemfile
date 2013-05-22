@@ -69,4 +69,3 @@ gem 'newrelic_rpm'
 
 # Server
 gem 'puma', github: 'puma/puma'
-

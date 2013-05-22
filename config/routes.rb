@@ -33,8 +33,9 @@ Ielt::Application.routes.draw do
     get 'super', :on => :member
   end
 
-  resources :sessions, :noticias, :paginas, :ministerios, :missionarios, :educacionais, :eventos, :banners, :devocionais
+  resources :sessions, :noticias, :paginas, :missionarios, :educacionais, :eventos, :banners, :devocionais
   resources :searches, :path => "buscar"
+  resources :ministerios, :path => "pastoral"
   
   mount Sidekiq::Web => '/sidekiq'
 end
