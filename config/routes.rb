@@ -28,6 +28,7 @@ Ielt::Application.routes.draw do
   match "historico" => "home#historico"
   match "estatuto" => "home#estatuto"
   match "regimento" => "home#regimento"
+  match "onde" => "home#onde"
   
   resources :usuarios do
     get 'super', :on => :member

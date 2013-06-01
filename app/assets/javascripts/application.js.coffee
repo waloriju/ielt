@@ -10,5 +10,6 @@
 #= require bootstrap-datepicker.pt-BR
 
 #= require jquery.bar.custom
+#= require jquery.gmap
 #= require helpers
 #= require_tree .
