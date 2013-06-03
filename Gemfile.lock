@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/digitalplaywright/mongoid-slug.git
-  revision: 8cbe3a5229e68e464f3f7caeada7e3df81b6d861
+  revision: e4aa8a8f524b49d3733575802063894bc480c450
   specs:
     mongoid_slug (3.1.1)
       mongoid (> 3.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/puma/puma.git
-  revision: 93ed2480d8b64f5f248f7a579d64a293f7382e91
+  revision: 2f506863b4520a4c78fea929dcc0809f05ad2dfd
   specs:
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
@@ -142,7 +142,7 @@ GEM
       mongoid (>= 2.1.0)
       will_paginate (>= 3.0.0)
     moped (1.5.0)
-    multi_json (1.7.4)
+    multi_json (1.7.5)
     net-scp (1.1.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -228,7 +228,7 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (1.1.1)
+    turbolinks (1.2.0)
       coffee-rails
     turbolinks_transitions (0.0.5)
       coffee-rails
