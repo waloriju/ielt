@@ -7,6 +7,8 @@ class Noticia
   field :titulo, type: String
   field :conteudo, type: String
   
+  mount_uploader :imagem, NoticiaUploader
+  
   slug :titulo
   
   validates :titulo, presence: true

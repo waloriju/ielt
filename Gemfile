@@ -67,5 +67,9 @@ gem 'foreman'
 # Monitoring
 gem 'newrelic_rpm'
 
+# reCAptcha
+gem "recaptcha", :require => "recaptcha/rails"
+
+
 # Server
 gem 'puma', github: 'puma/puma'

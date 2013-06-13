@@ -11,7 +11,7 @@
 		<div class="span12">
 			<div class="well" style="min-height: 200px;">
 				<div class="thumbnail"style="float: right; margin-left: 10px;">
-					<img src="http://placehold.it/300x200" alt="">                
+					<img src="<%= noticia.imagem.url(:front_page) %>" alt="">                
 				</div>
 				<p style="text-align: justify;"><%= noticia.conteudo.html_safe %></p>
 			</div>

@@ -44,4 +44,13 @@ class NoticiasController < ApplicationController
       render 'edit'
     end
   end
+  
+  def destroy
+    @noticia = Noticia.find params[:id]
+    if @noticia.delete
+      redirect_to noticias_path, notice: "Notícia removida"
+    else
+      render 'show'
+    end
+  end
 end

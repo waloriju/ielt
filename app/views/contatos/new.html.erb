@@ -1,0 +1,33 @@
+<div class="row">
+	<div class="span12">
+		<h1><i class="icon-mic"> </i>Entre em contato conosco</h1>
+	</div>
+	<div class="span12">
+	<%= form_for @contato, :html => {:class => "well"} do |f| %>
+	<% if @contato.errors.any? %>
+	<div id="error_explanation" class="alert">
+		<h2><%= pluralize(@contato.errors.count, "erro") %> encontrado(s):</h2>
+
+		<ul>
+			<% @contato.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<br />
+	<% end %>
+
+	<%= f.text_field :nome, :placeholder => "Nome*", :class => "input-large" %>
+	<%= f.text_field :email, :placeholder => "Email*", :class => "input-large" %>
+	
+	<br />
+	<%= f.text_field :telefone ,:placeholder => "Telefone*", :class => "input-large" %>
+	<br />
+	<%= f.text_area :mensagem, :placeholder => "Mensagem*", :class => "span6" %>
+
+	<%= recaptcha_tags %>
+
+	<div class="actions"><%= f.submit :class => "btn btn-primary", :value => "Enviar" %></div>
+	<% end %>
+</div>
+</div>

@@ -1,7 +1,6 @@
 Ielt::Application.routes.draw do
   require 'sidekiq/web'
-  
-  
+    
   get "session/create"
   get "session/destroy"
   get "home/index"
@@ -22,7 +21,6 @@ Ielt::Application.routes.draw do
   #Paginas estaticas
   match "sobre" => "home#sobre"
   match "nossa-visao" => "home#visao"
-  match "contato" => "home#contato"
   match "o-que-cremos" => "home#cremos"
   match "estrutura" => "home#estrutura"
   match "historico" => "home#historico"
@@ -37,6 +35,7 @@ Ielt::Application.routes.draw do
   resources :sessions, :noticias, :paginas, :missionarios, :educacionais, :eventos, :banners, :devocionais
   resources :searches, :path => "buscar"
   resources :ministerios, :path => "pastoral"
+  resources :contatos, :path_names => { :new => 'novo'}
   
   mount Sidekiq::Web => '/sidekiq'
 end

@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/puma/puma.git
-  revision: 2f506863b4520a4c78fea929dcc0809f05ad2dfd
+  revision: bd97b6ec3e24dceadc5a2537b106e6aa2a797008
   specs:
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
@@ -48,7 +48,7 @@ GEM
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    binding_of_caller (0.7.1)
+    binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
@@ -79,22 +79,22 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    connection_pool (1.0.0)
+    connection_pool (1.1.0)
     debug_inspector (0.0.2)
-    dotenv (0.7.0)
+    dotenv (0.8.0)
     elusive-icons-sass-rails (1.0.0.0)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     erubis (2.7.0)
-    excon (0.22.1)
+    excon (0.23.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    fog (1.11.1)
+    fog (1.12.1)
       builder
-      excon (~> 0.20)
+      excon (~> 0.23.0)
       formatador (~> 0.2.0)
-      json (~> 1.7)
       mime-types
+      multi_json (~> 1.0)
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
       nokogiri (~> 1.5.0)
@@ -104,7 +104,7 @@ GEM
       thor (>= 0.13.6)
     formatador (0.2.4)
     highline (1.6.19)
-    hike (1.2.2)
+    hike (1.2.3)
     i18n (0.6.1)
     ios-checkboxes (0.2.1)
       rails (~> 3.1)
@@ -142,7 +142,7 @@ GEM
       mongoid (>= 2.1.0)
       will_paginate (>= 3.0.0)
     moped (1.5.0)
-    multi_json (1.7.5)
+    multi_json (1.7.6)
     net-scp (1.1.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -150,8 +150,8 @@ GEM
     net-ssh (2.6.7)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    newrelic_rpm (3.6.3.104)
-    nokogiri (1.5.9)
+    newrelic_rpm (3.6.3.111)
+    nokogiri (1.5.10)
     origin (1.1.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -183,30 +183,31 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    recaptcha (0.3.5)
     redis (3.0.4)
     redis-namespace (1.3.0)
       redis (~> 3.0.0)
     ref (1.0.5)
     ruby-hmac (0.4.0)
-    rvm-capistrano (1.3.0)
+    rvm-capistrano (1.3.1)
       capistrano (>= 2.0.0)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    sidekiq (2.12.1)
+    sidekiq (2.12.3)
       celluloid (>= 0.14.1)
       connection_pool (>= 1.0.0)
       json
       redis (>= 3.0)
       redis-namespace
-    simple_calendar (0.1.8)
+    simple_calendar (0.1.9)
       rails (>= 3.0)
-    sinatra (1.3.6)
+    sinatra (1.4.3)
       rack (~> 1.4)
-      rack-protection (~> 1.3)
-      tilt (~> 1.3, >= 1.3.3)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
     slide-down-alerts-rails (0.0.2)
     slim (2.0.0)
       temple (~> 0.6.5)
@@ -225,7 +226,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     timers (1.1.0)
-    treetop (1.4.12)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (1.2.0)
@@ -239,7 +240,7 @@ GEM
     unicode_utils (1.0.0)
     will-paginate-i18n (0.1.13)
     will_paginate (3.0.4)
-    will_paginate-bootstrap (0.2.2)
+    will_paginate-bootstrap (0.2.3)
       will_paginate (>= 3.0.3)
 
 PLATFORMS
@@ -272,6 +273,7 @@ DEPENDENCIES
   puma!
   rails (= 3.2.13)
   rails-i18n
+  recaptcha
   rvm-capistrano
   sass-rails (~> 3.2.3)
   sidekiq
