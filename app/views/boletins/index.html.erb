@@ -1,0 +1,21 @@
+<% if @boletim %>
+	<div class="row">
+		<div class="span12">
+			<h1>Ultimo boletim: <small><%= @boletim.descricao %> </small></h1>
+			<i class="icon-download-alt"> </i>Clique <%= link_to "aqui", download_boletim_path(@boletim)%> para baixar
+		</div>
+		
+		<% if user_signed_in? %>
+			<div class="span12">
+				<a href="<%= edit_boletim_path(@boletim) %>"><i class="icon-pencil"> </i> Editar</a> ou 
+				<a href="<%= boletim_path(@boletim) %>" data-method="delete" data-confirm="Tem certeza?"><i class="icon-remove-circle"> </i> deletar</a>
+			</div>
+		<% end %>
+	</div>
+<% else %>
+<div class="row">
+	<div class="span12">
+		<h1 class="centralizado">Nenhum boletim cadastrado</h1>
+	</div>
+</div>
+<% end %>

@@ -1,0 +1,12 @@
+<%= form_for @boletim, :html => {:class => "well"} do |f| %>
+
+	<%= f.label :descricao, "Descrição do boletim" %>
+	<%= f.text_field :descricao, :class => "span8" %>
+	
+	<%= f.label :boletim, "Arquivo PDF" %>
+	<%= f.file_field :boletim %>
+	
+	<div class="form-actions">
+		<%= f.submit "Salvar", :class => "btn btn-large btn-success" %>
+	</div>
+<% end %>

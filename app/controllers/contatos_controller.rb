@@ -1,4 +1,5 @@
 class ContatosController < ApplicationController
+  before_filter :authenticate, :except => [:index, :new]
   
   def index
     @contatos = Contato.all
@@ -11,10 +12,10 @@ class ContatosController < ApplicationController
   def create
     @contato = Contato.new(params[:contato])
     
-    if @contato.save && verify_recaptcha(:model => @contato, :message => "Código incorreto!")
-      redirect_to contato_path, notice: "Sua mensagem foi recebida"
+    if(verify_recaptcha(:model => @contato, :message => "Código incorreto!") && @contato.save)
+      redirect_to new_contato_path, notice: "Sua mensagem foi recebida"
     else
-      render 'index'
+      render 'new'
     end
   end
   

@@ -19,4 +19,5 @@ ActiveSupport::Inflector.inflections do |inflect|
  inflect.irregular 'noticia', 'noticias'
  inflect.irregular 'educacional', 'educacionais'
  inflect.irregular 'devocional', 'devocionais'
+ inflect.irregular 'boletim', 'boletins'
 end

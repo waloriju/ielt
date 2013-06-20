@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="span12">
-		<h2>Bem vindo, <i><%= current_user.nome %></i></h2>
+		<h2>Logado como <i><%= current_user.nome %></i></h2>
 		<% if current_user.admin %>
 		<h4>
 			<small><i class="icon-th-large"> </i>Você é o administrador</small>
@@ -54,8 +54,8 @@
 				<li class="nav-header">Agenda</li>
 				<li><%= link_to "Adicionar um evento", new_evento_path %></li>
 				
-				<li class="nav-header">Devocional</li>
-				<li><%= link_to "Adicionar um devocional", new_devocional_path %></li>
+				<li class="nav-header">Boletins</li>
+				<li><%= link_to "Adicionar um boletim", new_boletim_path %></li>
 			</ul>
 		</div>
 	</div>

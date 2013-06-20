@@ -26,6 +26,11 @@ Ielt::Application.routes.draw do
   end
 
   resources :sessions, :noticias, :paginas, :missionarios, :educacionais, :eventos, :banners, :devocionais
+  resources :boletins do
+    member do
+      get :download
+    end
+  end
   resources :searches, :path => "buscar"
   resources :ministerios, :path => "pastoral"
   resources :contatos, :path_names => { :new => 'novo'}
