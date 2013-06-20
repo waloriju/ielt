@@ -19,14 +19,7 @@ Ielt::Application.routes.draw do
   match "painel" => "painel#index"
 
   #Paginas estaticas
-  match "sobre" => "home#sobre"
-  match "nossa-visao" => "home#visao"
-  match "o-que-cremos" => "home#cremos"
-  match "estrutura" => "home#estrutura"
-  match "historico" => "home#historico"
-  match "estatuto" => "home#estatuto"
-  match "regimento" => "home#regimento"
-  match "onde" => "home#onde"
+  get "sobre/:id" => "home#index", :as => :sobre
   
   resources :usuarios do
     get 'super', :on => :member

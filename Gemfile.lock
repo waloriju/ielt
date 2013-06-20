@@ -8,9 +8,9 @@ GIT
 
 GIT
   remote: git://github.com/puma/puma.git
-  revision: bd97b6ec3e24dceadc5a2537b106e6aa2a797008
+  revision: 514928a11b620a3a3de021a390dfaec3e490c6e5
   specs:
-    puma (2.0.1)
+    puma (2.1.0)
       rack (>= 1.1, < 2.0)
 
 GEM
@@ -142,7 +142,7 @@ GEM
       mongoid (>= 2.1.0)
       will_paginate (>= 3.0.0)
     moped (1.5.0)
-    multi_json (1.7.6)
+    multi_json (1.7.7)
     net-scp (1.1.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -150,7 +150,7 @@ GEM
     net-ssh (2.6.7)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    newrelic_rpm (3.6.3.111)
+    newrelic_rpm (3.6.4.122)
     nokogiri (1.5.10)
     origin (1.1.0)
     polyglot (0.3.3)
@@ -196,7 +196,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    sidekiq (2.12.3)
+    sidekiq (2.12.4)
       celluloid (>= 0.14.1)
       connection_pool (>= 1.0.0)
       json
