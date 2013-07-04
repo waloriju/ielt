@@ -1,5 +1,5 @@
 class BoletinsController < ApplicationController
-  before_filter :authenticate, :except => [:show, :index]
+  before_filter :authenticate, :except => [:show, :index, :download]
   respond_to :json, :html
   
   def new
